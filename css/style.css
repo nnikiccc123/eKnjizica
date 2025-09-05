@@ -90,6 +90,8 @@ section {
 
 .header {
   min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../resources/background.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -437,6 +439,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
   .detail-item {
     margin: 0;
   }
@@ -650,6 +653,13 @@ section {
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 767px) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../resources/background-mobile.jpeg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+  }
   .button-box {
     flex-direction: column;
     align-items: center;
